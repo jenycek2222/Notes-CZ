@@ -1,0 +1,1 @@
+responder je nástroj, který poslouchá na síti a hledá žádosti připojení, které byly vyslány po síti (pomocí různých protokolů, jako HTTP, SSH, SMB, ...)

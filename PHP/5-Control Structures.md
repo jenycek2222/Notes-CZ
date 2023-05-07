@@ -1,0 +1,1 @@
+- kontrolní struktury dávají kódu možnost provádět komplikovanější úkoly rychleji

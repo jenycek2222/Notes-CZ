@@ -1,0 +1,11 @@
+- Install-WindowsFeature -name AD-Domain-Services -IncludeManagementTools
+	- tento příkaz nainstalovat modul ADDSDeployment, který bude potřeba na zprovoznění active directory
+	- celý proces instalace AD je popsán zde: [Install Active Directory Domain Services (Level 100) | Microsoft Learn](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/install-active-directory-domain-services--level-100-)
+- Get-Command -Module ADDSDeployment
+	- tento příkaz zobrazí všechny příkazy obsažené v modulu ADDSDeployment
+- Get-Help *název_příkazu*
+	- tento příkaz zobrazí nápovědu k příkazu *název_příkazu*
+	- můžeš ho použít k zobrazení nápovědy k dílčím příkazům modulu ADDSDeployment
+- Install-ADDSForest -DomainName "jenda.local"
+	- nainstalován nový forest s názvem domény jenda.local
+	- bylo nastaveno SafeModeAdministratorPassword na Letmein123!

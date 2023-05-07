@@ -1,0 +1,4 @@
+- otevři soubor Basic-Wireshark-Capture1.pcapng v programu Wireshark (soubor se nachází ve stejném adresáři, jako tato poznámka)
+- tento záznam síťového provozu byl vytvořen autorem tohoto kurzu Davidem Bombalem v programu GNS3, pokud ho otevřeme, uvidíme něco takového:
+	- ![[Pasted image 20230408185220.png]]
+	- po otevření programu Wireshark se nám nabídnou tři hlavní pole: seznam paketů (zelené), detail vybraného paketu/OSI model reprezentace paketu (červené) a transkripce paketu do šestnáctkové soustavy a do ASCII charakterů (modré)

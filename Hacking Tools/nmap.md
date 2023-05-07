@@ -1,0 +1,5 @@
+- Network Mapper je nástroj, který skenuje zařízení na síti a to buď jedno, ale klidně i více
+- nmap --script vuln *target*
+	- cílový počítač prověří, zda-li není zranitelný vůči některým známým zranitelnostem
+	- GYZA AD DC je zranitelný vůči WannaCry
+- 

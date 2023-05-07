@@ -1,0 +1,9 @@
+- NTLM - NT LAN Manager - kolekce bezpečnostních protokolů firmy Microsoft, které poskytují ověření pravosti (authentication), bezúhonnost (integrity) a důvěrnost (confidentiality) uživatelům Windows OS
+	- heslo uživatele je na Windows uloženo pomocí NTLM hashe, hashe vytvořeného pomocí NTLM
+	- tato trojice bezpečnostních vlastnostní je známa pod zkratkou CIA
+- SAM soubor - Security Account Manager soubor je soubor (C:/Windows/System32/config/), který ukládá hashe hesel uživatelů
+- NTDS.DIT - další soubor, který ukládá důležité informace o objektech Active Directory
+	- NTDS - NT Directory Services
+	- DIT - Directory Information Tree
+- UNC path - speciální typ deklarace cesty na síti (formát: \\\\192.168.1.1\\sdilena_slozka\\adresar\\soubor.pripona)
+	- UNC - Universal Naming Convention

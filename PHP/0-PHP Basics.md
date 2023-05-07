@@ -1,0 +1,5 @@
+- PHP je skriptovací jazyk, je interpretován serverem
+- při každém vyžádání .php dokumentu klientem, se kód ohraničený \<?php a ?> v tomto souboru na serveru interpretuje a jeho výsledek je poslán klientovi jako HTML syntaxe
+	- příklad: <\?php echo "<\p>Hello World</\p>";?> se změní na <\p>Hello World</\p> v dokumentu, který je poslán klientovi
+- klient nikdy v DOM nevidí <?php ?>
+- PHP vznikl v roce 1994 jako práce Rasmuse Lerdorfa

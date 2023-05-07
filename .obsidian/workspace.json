@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "178be4cb7e2b92da",
+    "type": "split",
+    "children": [
+      {
+        "id": "de160e1b5367e81d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8ac34b556c57c35c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1ed75ce200f9aaec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Docker/2-BasicOperations.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "43545f36bec7adb6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "45cfd212bdb72a47",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.7"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5e562a208fe65739",
+    "type": "split",
+    "children": [
+      {
+        "id": "4323bfd26dd2ef95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93b10076cbb23315",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f2b640074eae197b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cff80886c010e173",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ed387e99a5823b69",
+    "type": "split",
+    "children": [
+      {
+        "id": "90565a2cca499492",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69da24733df77b02",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Linux/Commands.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false
+    }
+  },
+  "active": "45cfd212bdb72a47",
+  "lastOpenFiles": [
+    "Google Searching and Dorks.md",
+    "SQL/Příkazy.md",
+    "SQL/Instalace a spuštění.md",
+    "Hacking Tools/enum4linux-ng.py.md",
+    "Hacking Tools/exiftool.md",
+    "Hacking Tools/Gobuster.md",
+    "Exploits/SQLi/0-What is SQLi.md",
+    "ApiSecU/1-Introduction.md",
+    "ApiSecU/3-API Reconnaissance.md",
+    "CCNA/Day 1 - Network Devices.md",
+    "Docker/1-Installation.md",
+    "Docker/2-BasicOperations.md",
+    "Markdown/Pasted image 20230506085315.png",
+    "Markdown/Pasted image 20230208125033.png",
+    "Markdown/Pasted image 20230208124947.png",
+    "Linux/Commands.md",
+    "Windows/AD/0-What is Active Directory.md",
+    "Windows/Zkratky.md",
+    "Windows/Commands.md",
+    "Windows/PowerShell Commands.md",
+    "Windows/AD/1-Lab Setup.md",
+    "Docker/3-DockerFiles.md",
+    "Markdown/Pasted image 20230506081725.png",
+    "Markdown/Pasted image 20230506081604.png",
+    "Markdown/Pasted image 20230506081330.png",
+    "Docker/Commands.md",
+    "Markdown/Pasted image 20230506080655.png",
+    "Docker/Important terms.md",
+    "Windows/Well-Known .EXE Configuration files.md",
+    "Windows/AD/A-Domain Controller Documentation.md",
+    "LAMP/Cesty.md",
+    "Sny pro enhancement lucidní paměti/14.-15. 3. 2023.md",
+    "Sny pro enhancement lucidní paměti/16. 4. 2023.md",
+    "Exploits/SQLi",
+    "Exploits",
+    "Windows/AD",
+    "Markdown/Pasted image 20230408185220.png",
+    "Markdown/Pasted image 20230408184745.png",
+    "Udemy Courses/Wireshark - Packer Analysis and Ethical Hacking - Core Skills/1-WiresharkBasics/Basic-Wireshark-Capture1.pcapng",
+    "Udemy Courses/Wireshark - Packer Analysis and Ethical Hacking - Core Skills/1-WiresharkBasics/Basic-Wireshark-Capture1.zip",
+    "Udemy Courses/Wireshark - Packer Analysis and Ethical Hacking - Core Skills/1-WiresharkBasics",
+    "Udemy Courses/Wireshark - Packer Analysis and Ethical Hacking - Core Skills/Basic-Wireshark-Capture1.zip",
+    "Udemy Courses/Wireshark - Packer Analysis and Ethical Hacking - Core Skills/Nepotvrzeno 137206.crdownload",
+    "Markdown/Pasted image 20230320173448.png",
+    "Untitled.canvas",
+    "ApiSecU",
+    "Sny pro enhancement lucidní paměti"
+  ]
+}

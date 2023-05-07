@@ -1,0 +1,103 @@
+## Introduction to API Reconnaissance
+- to exploit vulnerable APIs, we first need to find them
+- reconnaissance is the process of finding these APIs
+- reconnaissance can be Active or Passive
+	- Passive reconnaissance uses techniques, that do not interact with the target system (server, web page, IP address, you define it...) - it can be searching the wikipedia page of the service, shodaning it, ... - it is nearly impossible for the target to realise you are scanning them
+	- Active reconnaissance is the process of scanning the target directly, thus it is easier to spot this recon techniques by the target
+- Public APIs are meant to be easily found, they come with no authentication or they do have an authentication protocol in place - it depends on the data sensitivity the API is providing
+	- Public API providers typically offer a manual, so that end-users know, how to use the API
+- Partner APIs are intended to be used by partners of the API provider, these are harder to find and even the documentation is only available for partners
+- Private APIs are the most information-light APIs, they are intended for the organization itself and most of the time, the documentation is very had to find or is missing
+- for all cases of APIs, if you don't posses the documentation, you will need to reverse engineer the API
+- there are some URL naming schemes, that might uncover the use of an API
+	- list of suspicious subdomains: api, uat, dev, developer, test, ...
+	- list of suspicious directories: /api, /api/v1, /v1,/v2, /v3, /rest, /swagger, /swagger.json, /doc, /docs, /graphql, /graphiql, /altair, /playground, ...
+	- if your responses have JSON/XML headers, you might have just discovered an API
+	- this is an active recon technique, but it sort of is a normal customer behaviour, so it doesn't matter too much
+- these websites provide lists of some known APIs: 
+	- [https://github.com/](github)
+	-  [https://www.postman.com/explore/apis](https://www.postman.com/explore/apis)
+	- [https://www.programmableweb.com/apis/directory](https://www.programmableweb.com/apis/directory)
+	- [https://apis.guru/](https://apis.guru/)
+	- [https://github.com/public-apis/public-apis](https://github.com/public-apis/public-apis)
+	- [https://rapidapi.com/search/](https://rapidapi.com/search/)
+	- this should be passive recon
+- you can also try navigating to the main page of the server to see, if an API is advertised
+## Passive Reconnaissance
+- Passive reconnaissance is a type of reconnaissance, which uses techniques, that do not interact with the target system (server, web page, IP address, you define it...) - it can be searching the wikipedia page of the service, shodaning it, ... - it is nearly impossible for the target to realise you are scanning them
+- OSINT (Open Source Intelligence) is a typical example of Passive recon, in OSINT, you collect publicly available data such as:
+	- API endpoints and documentation
+	- Leaked credentials
+	- Version information
+	- you can also stumble upon some critical data (JSON Web Tokens, API Keys, leaked PII, SSN, other info...)
+- Google Dorking
+	- you can try to search for a public API of a service even without dorking (search for: google gmail API)
+	- site:"google.com" - this will only display result from google.com domain
+	- intitle:"API Keys list" - this will only display results that have the given string in the title
+	- inurl:"/api/v1" - this will only display results that have the given string in the URL
+	- ![[Pasted image 20230320165506.png]]
+		- these are some examples of google dorking, that could actually be used for something
+- Git Dorking
+	- dorking on GitHub
+	- developers use github to colaborate on their projects and thus share their source code - it can help you reverse engineer the app's API you're trying to pentest
+	- sometimes, samaritan developers will post an issue, if they see a bad thing (typically an exposure of an API key) on GitHub, you can search those issues (with no git dorking) with the phrase: API Key exposed - and some issues could pop up, then, if the issues was not resolved, you can still hack the API key - you must be lucky, because the issue must refer to your target...
+	- extension:"json" - will only search for files with the .json extension
+	- filename:"filename.json" - will only search for files named as the string
+	- "Authorization: Bearer" - this is not a dork, but it will search for a specific request header
+	- you can also search for: access_token, api keys, api_keys, API Keys, token, secret, ...
+	- once you find a good repository, try searching through the files for some variable names (api_key, token, ...)
+	- you can also click the history button, to see the previous commits
+		- you can click the Split button, which will display both the new and the old commit, so you can easily compare them
+- Shodan
+	- Shodan is an online service, that basically acts as a search engine on steroids
+	- Shodan periodically searches through the internet to find the information you could be looking for
+	- official website: https://shodan.io
+	- and again, first off, you can try some basic searches first (google API, coinbase, CompanyXYZ Api keys)
+	- to use Shodan's more complex functions, you have to log in
+	- port:"443" - will specifically search for https websites running on port 443
+	- hostname:"google.com" - again, this is the domain search (but you can also supply an IP address there)
+	- "Content-type: application/json" - another request header search, this header is often used in APIs
+	- "wp-json" - searches for WordPress API
+- Wayback Machine
+	- The Wayback machine is the archive of the internet, thus it keeps records on some URL and how they progressed in time
+	- ![[Pasted image 20230320172633.png]]
+		- this is a Wayback machine search for the Reddit API documentation, you can click the timestamps to see how the website look like back then
+- TruffleHog
+	- TruffleHog is an automated tool, that will search through sources like GitHub, Git, Gitlab, AmazonS3, filesystem and Syslog
+	- to run a test, use this command: sudo docker run -it -v "$PWD:/pwd" trufflesecurity/trufflehog:latest github --org=target-name
+	- to read some more documentation on the tool, visit this link: [https://github.com/trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog)
+	- result of a TruffleHog scan: ![[Pasted image 20230320173448.png]]
+- API Directories
+	- we referenced them in the first section of this module, they are repositories, where you can find a lot of public APIs
+	- programmableweb.com clearly stands out as it has a database of over 23000 APIs and also a University, where you can learn about APIs
+## Active Reconnaissance
+- Active Reconnaissance is the act of getting the information directly from the target, thus the target could be notified, that we now posses some information
+- when dealing with APIs, you will scan for the target's open ports running the HTTP protocol, from there, you can open your web browser and search through the web application to find some APIs
+- the tools that are going to help us do the active recon include: nmap, OWASP Amass, gobuster, kiterunner and DevTools
+- nmap
+	- nmap is a powerful tool used for scanning ports, enumerating services and searching for vulnerabilities
+	- there are many variations of switches that nmap offers, but we will be interested in these three:
+		- general detection: $ nmap -sC -sV *target address* -oN *output filename*
+		- brief all port scan: $ nmap -p- *target address* -oN *output filename*
+		- http enumeration scan: $ nmap -sV --script=http-enum *target address* -p *all the ports with HTTP running on them separated with commas*
+			- -sC - tag that tells nmap to use defaut scripts (scripts enhance the capabilities of nmap)
+			- -oN - tells nmap to store the output to the specified filename in the standard nmap format (you could also use -oX for XML, -oG for geppable or -oA for all the formats)
+			- -p - tells nmap what ports to scan (-p- means all the ports (all the way up to 65535))
+			- -sV - is the type of scan, this one is version enumeration (you can also use -sT for TCP connect scan, -sS for stealth scan, -sU for UDP scan and many more)
+			- --script= - this tag tells nmap which specific script to use, in the third scan, we use http-enum script, which returns specific information about HTTP protocol running on the machine
+- amass
+	- amass is a tool from OWASP, that collects OSINT information from about 55 different sources, it can be used in both Active and Passive recon, you can specify the recon type by using -passive or -active tag
+	- command: $ amass enum -list
+		- this command will display the techniques, that amass will use to scan your target
+		- some of them are available by default, some of them must be activated using an API key, that you can get when you register a free account in the specific company that is providing the data
+		- for example Censys requires us to create a Censys account and grab an API key from there
+			- 1. Go to https://censys.io/register, register your account there
+			- 2. Do the email verification stuff and login to Censys Search
+			- 3. Go to your account (click on the icon in the top right part of the site) --> My Account --> API
+			- 4. Grab the API key from the API credentials
+			- 5. Type this command into the computer, to create a config file:
+				- `sudo curl https://raw.githubusercontent.com/OWASP/Amass/master/examples/config.ini >~/.config/amass/config.ini`
+			- 6. Edit the config file located in ~/.config/amass/config.ini, find the [data sources] section and search for Censys there, then paste the API key and the secret in the variables respectively
+			- 7. Save the file and exit
+			- 8. Now you should see Censys as available in the amass enum -list command
+	- command: $ amass enum -active -d

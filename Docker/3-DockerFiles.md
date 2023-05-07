@@ -1,0 +1,27 @@
+- DockerFiles jsou množinou instrukcí napsaných do souboru, které po spuštění vytvoří docker obraz
+- říkají, co se má stát, když je obraz budován
+- pomáhájí jednoduše vytvářet modifikované obrazy založené na jiných
+- DockerFiles intrukce mají tento formát: *INSTRUKCE argument*
+- základní instrukce:
+	- FROM
+		- nastavuje základní pracovní prostředí (OS), ze kterého bude nový obraz vycházet
+		- je povinné tuto instrukci zahrnout do DockerFile úplně na začátek
+		- příklad: FROM ubuntu:20.04
+			- použijeme obraz ubuntu verzi 20.04 jako náš OS pro náš budoucí container
+	- RUN
+		- tato instrukce spustí příkazy v kontejneru
+		- příklad: RUN apt update
+			- na novém kontejneru budou updatovány apt repozitáře
+	- COPY
+		- tato instrukce zkopíruje soubory z hostovacího systému do pracovního adresáře v kontejneru
+	- WORKDIR
+		- nastaví pracovní adresář (working directory)
+	- CMD
+		- tato instrukce říká, jaký příkaz se má spustit, když je container spuštěn
+		- příklad: CMD /bin/sh
+			- typicky chceme spouštět nějakou shell, abychom  mohli se systémem interagovat
+	- EXPOSE
+		- říká člověku, co kontejner spouští, které porty přesměrovat ven
+		- příklad: EXPOSE 80
+			- člověk při spouštění kontejneru musí napsat docker run -p 80:80)
+	- 

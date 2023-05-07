@@ -1,0 +1,9 @@
+- je to velmi rychlý cracker síťových přihlašovacích výzev, který podporuje mnohé servisy (ssh, http, ...)
+- program se repetitivně přihlašuje na daný server pod daným protokolem a používá k přihlášení jméno a heslo z wordlistů
+- používá se pomocí příkazu hydra
+- -F - tento switch zastaví útok, jakmile je nalezena první username-password dvojice
+- -v - verbose mode (upovídaný mód - řekne ti všechno, co se děje)
+- -l {username} - specifikujeme uživatele
+- -P {file} - specifikujeme wordlist s hesly
+- bez switche musíme specifikovat náš cíl pomocí protokol://IP-adresa (například ssh://10.10.10.10)
+- -t {number} - tento switch řekne hydře, že chceme používat pouze prvních number hesel z wordlistu

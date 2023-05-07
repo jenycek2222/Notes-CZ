@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "178be4cb7e2b92da",
+    "type": "split",
+    "children": [
+      {
+        "id": "bfccb286c2f17a26",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "SQL/Teoretické pojmy.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5e562a208fe65739",
+    "type": "split",
+    "children": [
+      {
+        "id": "4323bfd26dd2ef95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93b10076cbb23315",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f2b640074eae197b",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ed387e99a5823b69",
+    "type": "split",
+    "children": [
+      {
+        "id": "90565a2cca499492",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "69da24733df77b02",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "SQL/Teoretické pojmy.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "bfccb286c2f17a26",
+  "lastOpenFiles": [
+    "Linux/Commands.md",
+    "HTB/Crackme.pdf.md",
+    "CCNA/nwm.md",
+    "Untitled.md",
+    "1 - clear text.md",
+    "Markdown/test.md",
+    "SQL/Co mě naučil NetworkChuck a SoloLearn.md",
+    "SQL/Teoretické pojmy.md",
+    "SQL/Instalace a spuštění.md",
+    "Windows/Commands.md"
+  ]
+}

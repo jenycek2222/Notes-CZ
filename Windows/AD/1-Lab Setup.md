@@ -1,0 +1,15 @@
+- stáhnul jsem Windows Server 2022 Evaluation edition obraz disku (iso):
+	- link: [Windows Server 2022 | Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
+	- stáhnutý soubor: "D:\JohnHammondAD\SERVER_EVAL_x64FRE_en-us.iso"
+	- Get-FileHash: není znám
+	- Get-FileHash na staženém souboru: 
+	- tato verze Windows Serveru bude prý platná pouze na 180 dní, tak to ať si raději s testováním a zkušenostmi pospíším
+	- přihlašoovací údaje: login: Administrator, heslo: Letmein123!
+- stáhnul jsem Windows 11 obraz disku (iso):
+	- link: [Stažení systému Windows 11 (microsoft.com)](https://www.microsoft.com/cs-cz/software-download/windows11)
+	- přímý link na stažení platný 24 hod: https://software.download.prss.microsoft.com/dbazure/Win11_22H2_English_x64v1.iso?t=665393b3-c2ba-4d56-9bc0-ee9d0c311ae1&e=1681638107&h=d652f99a3efe33c251daca09fff80416c482eddaeef64e33c7273591512f1c8e
+	- stáhnutý soubor: "D:\JohnHammondAD\Win11_22H2_English_x64v1.iso"
+	- Get-FileHash: 0DF2F173D84D00743DC08ED824FBD174D972929BD84B87FE384ED950F5BDAB22
+	- Get-FileHash na staženém souboru: 0DF2F173D84D00743DC08ED824FBD174D972929BD84B87FE384ED950F5BDAB22 (uff)
+	- přihlašovací údaje: login: LocalAdmin, heslo: Password321!
+- 

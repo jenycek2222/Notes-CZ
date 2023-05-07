@@ -1,0 +1,5 @@
+- apachectl configtest
+	- tento příkaz se používá na kontrolu konfigurace apache, apachectl je nainstalováno na systém při normální instalaci apache
+- po každém zapnutí nastartuj service apache2 (příkaz: service apache2 start)
+	- TO-DO: cronjob
+- 

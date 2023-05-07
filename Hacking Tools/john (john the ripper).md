@@ -1,0 +1,12 @@
+- john the ripper je obsáhlý nástroj, který obsahuje velké množství příkazů, které se rozdělují do dvou balíků (john, john-data)
+- příkaz: unshadow
+	- tento příkaz bere za argumenty dva soubory, první ve formátů /etc/passwd, druhý ve formátů /etc/shadow a zkombinuje je tak, že u každého uživatelského jména je hash jeho hesla
+	- unshadow /etc/passwd /etc/shadow | grep '\$y' | tee {path_to_file}
+		- tento příkaz zkombinuje dva zmíněné soubory a výstup uloží do path_to_file
+		- pozn.: je radno zálohovat /etc/passwd a /etc/shadow před tím, než s nimi operujeme
+		- k manipulaci s /etc/shadow potřebujeme root privileges
+- příkaz john:
+	- tento příkaz spustí dictionary attack na seznam hashů
+	- john path_to_file --wordlist /usr/share/wordlists/rockyou.txt --format=crypt
+		- u path_to_file použijeme "serializovaný" výstup z unshadow příkazu, použijeme jakýkoliv wordlist pomocí switche --wordlist a specifikujeme formát pomocí --format=
+		- 

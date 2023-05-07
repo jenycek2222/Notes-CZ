@@ -1,0 +1,8 @@
+- další hash-cracker, ale trochu složitější
+- potřebujeme specifikovat attack mode, hash type, ...
+- -a {number} - nastavení attack módu
+- -m {number} - nastavení typu hashe
+- potom přidáme soubor s hashem
+- a nakonec wordlist
+- hashcat -a 0 -m 5600 hashes.txt rockyou.txt
+	- příklad crackování SMB hashe
