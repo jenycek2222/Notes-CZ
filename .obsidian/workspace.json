@@ -8,55 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "8ac34b556c57c35c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Docker/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "1ed75ce200f9aaec",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Docker/2-BasicOperations.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "43545f36bec7adb6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Linux/Commands.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "45cfd212bdb72a47",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Git/Part1/1-IntroductionToGit.md",
+                "file": "Git/Git & GitHub Practical.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -122,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Git/Part1/1-IntroductionToGit.md",
+                "file": "Git/Git & GitHub Practical.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,10 +112,28 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "45cfd212bdb72a47",
+  "active": "1ed75ce200f9aaec",
   "lastOpenFiles": [
-    "Git/Preface.md",
+    "PHP/7-Predefined values.md",
+    "Git/Git & GitHub Practical.md",
+    "PHP/8-Working with files.md",
+    "PHP/9-Object Oriented PHP.md",
+    "PHP/5-ControlStructures.md",
+    "PHP/6-Functions.md",
+    "SQL/Instalace a spuštění.md",
+    "Udemy Courses/Wireshark - Packer Analysis and Ethical Hacking - Core Skills/1-WiresharkBasics/Wireshark Basics.md",
     "Git/Part1/1-IntroductionToGit.md",
+    "PHP/3-Operators.md",
+    "PHP/1-Basic Syntax.md",
+    "PHP/1-Basic Syntax (1).md",
+    "PHP/2-Variables.md",
+    "PHP/2-Variables.md",
+    "PHP/3-Operators (1).md",
+    "PHP/4-Arrays (1).md",
+    "PHP/4-Arrays.md",
+    "Linux/Commands.md",
+    "PHP/5-Control Structures.md",
+    "Git/Preface.md",
     "Git/Part5",
     "Git/Part4",
     "Git/Part3",
@@ -161,35 +142,17 @@
     "Git",
     "Google Searching and Dorks.md",
     "SQL/Příkazy.md",
-    "SQL/Instalace a spuštění.md",
     "Hacking Tools/enum4linux-ng.py.md",
     "Hacking Tools/exiftool.md",
     "Hacking Tools/Gobuster.md",
     "Exploits/SQLi/0-What is SQLi.md",
-    "ApiSecU/1-Introduction.md",
-    "ApiSecU/3-API Reconnaissance.md",
-    "CCNA/Day 1 - Network Devices.md",
-    "Docker/1-Installation.md",
-    "Docker/2-BasicOperations.md",
     "Markdown/Pasted image 20230506085315.png",
     "Markdown/Pasted image 20230208125033.png",
     "Markdown/Pasted image 20230208124947.png",
-    "Linux/Commands.md",
-    "Windows/AD/0-What is Active Directory.md",
-    "Windows/Zkratky.md",
-    "Windows/Commands.md",
-    "Windows/PowerShell Commands.md",
-    "Windows/AD/1-Lab Setup.md",
-    "Docker/3-DockerFiles.md",
     "Markdown/Pasted image 20230506081725.png",
     "Markdown/Pasted image 20230506081604.png",
     "Markdown/Pasted image 20230506081330.png",
-    "Docker/Commands.md",
     "Markdown/Pasted image 20230506080655.png",
-    "Docker/Important terms.md",
-    "Windows/Well-Known .EXE Configuration files.md",
-    "Windows/AD/A-Domain Controller Documentation.md",
-    "LAMP/Cesty.md",
     "Exploits/SQLi",
     "Exploits",
     "Windows/AD",
