@@ -1,0 +1,1 @@
+- Git je VCS (Version Control System), který byl vyvinut Linusem Torvaldsem
