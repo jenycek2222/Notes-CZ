@@ -47,6 +47,7 @@
 - PHP automaticky převede datový typ, na kterém se má operace vykonat (JS to taky umí, ale Python zaostává)
 #VARIABLE_SCOPE
 - rámec proměnné je část kódu, ve které může jistá deklarovaná proměnná použita, to záleží na místě v kódu, kde byla proměnná deklarována
+- PHP rozlišuje dva rámce proměnných lokální a globální
 - pokud byla proměnná deklarována mimo definici funkce (viz funkce), pak byla definována v globálním rámci a stala se globální proměnnou - s globální proměnnou můžou pracovat všechny části skriptu (i definice funkcí)
 	- pokud ale chceme s globální proměnnou pracovat v definici funkce, musíme přidat klíčové slovo global před $identifikátor
 - pokud byla proměnná deklarována uvnitř funkce, pak byla definována v lokálním rámci a stala se lokální proměnnou - s lokální proměnnou může pracovat pouze definice té funkce, která si proměnnou deklarovala, jiné části kódu ne
